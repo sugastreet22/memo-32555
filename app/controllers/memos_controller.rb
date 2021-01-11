@@ -6,5 +6,6 @@ class MemosController < ApplicationController
   end
 
   def create
+    render plain: params["memos"]["title"] + ":" + params["memos"]["body"]
   end
 end
